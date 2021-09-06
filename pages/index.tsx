@@ -1,9 +1,10 @@
 import type { NextPage } from 'next';
+import { SectionBio } from '../components/sections/bio';
 
 const Home: NextPage = () => {
 	return (
-		<div>
-			<h1>Content Here</h1>
+		<div className='container'>
+			<SectionBio />
 		</div>
 	);
 };

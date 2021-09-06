@@ -43,7 +43,7 @@ export const Navbar = () => {
 		<nav className='fixed h-16 w-full z-1030 top-0 left-0 bg-gray-100 shadow-md'>
 			<div className='h-full flex flex-row items-center justify-between mr-64 ml-64'>
 				<div className='flex'>
-					<a className='font-bold text-2xl text-purple-500'>Slava Cherkesov</a>
+					<a className='font-bold text-2xl text-purple-500'>chrtyaka</a>
 
 					<IconImp
 						viewBox='0 0 100 100'
