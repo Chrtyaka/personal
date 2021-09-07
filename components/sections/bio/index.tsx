@@ -18,7 +18,7 @@ export const SectionBio = () => {
 					<a
 						href='https://insigne.ru/'
 						target='_blank'
-						className='mt-4 font-bold text-purple-500'
+						className='mt-4 font-bold text-purple-500 hover:underline'
 						rel='noreferrer'
 					>
 						INSIGNE

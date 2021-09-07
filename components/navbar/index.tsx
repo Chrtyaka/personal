@@ -1,46 +1,53 @@
 import { IconImp } from '../icons/imp';
+import { useState } from 'react';
+import { NavLink } from './nav-link/index';
 
 export const Navbar = () => {
+	const [activeLink, setActiveLink] = useState('home');
+
 	const links = [
 		{
 			id: 'home',
 			name: 'Home',
-			link: '/',
+			href: '/',
 		},
 		{
 			id: 'experience',
 			name: 'Experience',
-			link: '#experience',
+			href: '#experience',
 		},
 		{
 			id: 'projects',
 			name: 'Projects',
-			link: '#projects',
+			href: '#projects',
 		},
 		{
 			id: 'resume',
 			name: 'Resume',
-			link: '/',
+			href: '/',
+			params: {
+				target: '_blank',
+				rel: 'noreferrer',
+			},
 		},
 		{
 			id: 'contact',
 			name: 'Contact',
-			link: '#contact',
+			href: '#contact',
 		},
 	];
 
-	const linkElements = links.map((item) => (
-		<a
-			className='text-base text-purple-500 ml-4 hover:text-purple-600'
-			key={item.id}
-			href={item.link}
-		>
-			{item.name}
-		</a>
+	const linkElements = links.map((link) => (
+		<NavLink
+			key={link.id}
+			active={activeLink === link.id}
+			onClick={() => setActiveLink(link.id)}
+			item={link}
+		/>
 	));
 
 	return (
-		<nav className='fixed h-16 w-full z-1030 top-0 left-0 bg-gray-100 shadow-md'>
+		<nav className='fixed h-16 w-full z-1030 top-0 left-0'>
 			<div className='h-full flex flex-row items-center justify-between mr-64 ml-64'>
 				<div className='flex'>
 					<a className='font-bold text-2xl text-purple-500'>chrtyaka</a>
