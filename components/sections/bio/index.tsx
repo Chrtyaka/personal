@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import avatarPic from '../../../assets/images/avatar.jpg';
+import { IconLinkedIn } from 'components/icons/linkedin';
 
 export const SectionBio = () => {
 	return (
@@ -22,10 +23,10 @@ export const SectionBio = () => {
 					<a
 						href='https://insigne.ru/'
 						target='_blank'
-						className='mt-4 font-bold text-purple-500 hover:underline'
+						className='mt-4 pt-2 pb-2 pl-4 pr-4 rounded-3xl shadow-lg bg-white'
 						rel='noreferrer'
 					>
-						INSIGNE
+						<span className='text-purple-500'>Insigne</span>
 					</a>
 				</div>
 
@@ -33,6 +34,9 @@ export const SectionBio = () => {
 					<h1 className='text-6xl text-purple-500'>
 						👋 Hi! I'm Slava Cherkesov
 					</h1>
+					<p className='mt-8 text-2xl'>
+						I'm 24 y.o Frontend Developer / Team Lead at Insigne.
+					</p>
 				</div>
 			</div>
 		</section>
