@@ -8,7 +8,7 @@ export const SectionBio = () => {
 					<h1 className='text-7xl mt-12 mb-12 text-purple-500'>
 						Hi! I'm Slava 👋
 					</h1>
-					<p className='text-3xl text-gray-500 font-normal leading-16 mb-4'>
+					<p className='text-3xl text-gray-500 font-normal leading-13 mb-4'>
 						I'm JavaScript Developer 🚀 Team Lead 😈 <br />
 						Having an experience of building Web applications with JavaScript /
 						Reactjs / Redux / Vue / Vuex / Quasar / TypeScript and some other
