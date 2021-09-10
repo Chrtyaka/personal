@@ -48,7 +48,7 @@ export const Navbar = () => {
 
 	return (
 		<nav className='fixed h-16 w-full z-1030 top-0 left-0'>
-			<div className='h-full flex flex-row items-center justify-between mr-64 ml-64'>
+			<div className='h-full flex flex-row items-center justify-between mr-8 ml-8'>
 				<div className='flex'>
 					<a className='font-bold text-2xl text-purple-500'>chrtyaka</a>
 

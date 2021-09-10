@@ -4,7 +4,7 @@ export const Layout = ({ children }) => {
 	return (
 		<>
 			<Navbar />
-			<main className="w-full mt-16">{children}</main>
+			<main className='w-full mt-16'>{children}</main>
 		</>
 	);
 };
