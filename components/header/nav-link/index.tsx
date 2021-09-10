@@ -1,18 +1,11 @@
 import { useState, useEffect } from 'react';
 import classNames from 'classnames';
+import { NavLinkItem } from '../types';
 
 type NavLinkProps = {
 	active: boolean;
 	onClick: () => void;
-	item: {
-		id: string;
-		name: string;
-		href: string;
-		params: {
-			target: string;
-			rel: string;
-		};
-	};
+	item: NavLinkItem;
 };
 
 export const NavLink = ({ active, onClick, item }: NavLinkProps) => {

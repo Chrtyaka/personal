@@ -1,11 +1,12 @@
 import { IconImp } from '../icons/imp';
 import { useState } from 'react';
 import { NavLink } from './nav-link/index';
+import { NavLinkItem } from './types';
 
-export const Navbar = () => {
+export const Header = () => {
 	const [activeLink, setActiveLink] = useState('home');
 
-	const links = [
+	const links: NavLinkItem[] = [
 		{
 			id: 'home',
 			name: 'Home',
@@ -47,7 +48,7 @@ export const Navbar = () => {
 	));
 
 	return (
-		<nav className='fixed h-16 w-full z-1030 top-0 left-0'>
+		<header className='h-20 w-full z-1030'>
 			<div className='h-full flex flex-row items-center justify-between mr-8 ml-8'>
 				<div className='flex'>
 					<a className='font-bold text-2xl text-purple-500'>chrtyaka</a>
@@ -60,8 +61,8 @@ export const Navbar = () => {
 					/>
 				</div>
 
-				<div className='flex items-center justify-start'>{linkElements}</div>
+				<nav className='flex items-center justify-start'>{linkElements}</nav>
 			</div>
-		</nav>
+		</header>
 	);
 };

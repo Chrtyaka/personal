@@ -1,9 +1,9 @@
-import { Navbar } from '../navbar/index';
+import { Header } from '../header/index';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<>
-			<Navbar />
+			<Header />
 			<main className='w-full mt-16'>{children}</main>
 		</>
 	);
