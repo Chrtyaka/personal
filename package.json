@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --check '**/*.{ts,tsx}'",
+    "prettier:fix": "prettier --write '**/*.{ts,tsx}'"
   },
   "dependencies": {
     "classnames": "^2.3.1",
