@@ -21,7 +21,7 @@ export const NavLink = ({ active, onClick, item }: NavLinkProps) => {
         defaultWrapperClass,
         classNames(defaultWrapperClass, {
           'bg-purple-500': active,
-          'hover:border-purple-500': !active,
+          'hover:border-purple-500 dark:hover:border-white': !active,
         }),
       ),
     );
@@ -29,7 +29,7 @@ export const NavLink = ({ active, onClick, item }: NavLinkProps) => {
     setLinkClass(
       classNames(defaultLinkCLass, {
         'text-white': active,
-        'text-purple-500': !active,
+        'text-purple-500 dark:text-white': !active,
       }),
     );
   }, [active]);
