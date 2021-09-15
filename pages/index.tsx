@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
-import { SectionBio } from '../components/sections/bio';
+import { SectionGreet } from '../components/sections/bio';
 
 const Home: NextPage = () => {
-	return (
-		<div className='container'>
-			<SectionBio />
-		</div>
-	);
+  return (
+    <div className="container">
+      <SectionGreet />
+    </div>
+  );
 };
 
 export default Home;

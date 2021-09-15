@@ -1,7 +1,8 @@
-import { BannerBio } from '../../banners/bio';
+import { ReactElement } from 'react';
+import { BannerGreet } from '../../banners/bio';
 import { SOCIALS_LINKS } from './constants/socials';
 
-export const SectionBio = () => {
+export const SectionGreet = (): ReactElement => {
   const socials = SOCIALS_LINKS.map((link) => {
     return (
       <a
@@ -39,7 +40,7 @@ export const SectionBio = () => {
         </div>
 
         <div className="w-6/12">
-          <BannerBio />
+          <BannerGreet />
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactElement } from 'react';
 import classNames from 'classnames';
 import { NavLinkItem } from '../types';
 
@@ -8,7 +8,11 @@ type NavLinkProps = {
   item: NavLinkItem;
 };
 
-export const NavLink = ({ active, onClick, item }: NavLinkProps) => {
+export const NavLink = ({
+  active,
+  onClick,
+  item,
+}: NavLinkProps): ReactElement => {
   const [wrapperClass, setWrapperClass] = useState('');
   const [linkClass, setLinkClass] = useState('');
   const defaultWrapperClass =

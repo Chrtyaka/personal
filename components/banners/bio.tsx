@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 
-export const BannerBio = (): ReactElement => {
+export const BannerGreet = (): ReactElement => {
   return (
     <svg
       id="f1b25b43-9e03-45b3-af71-047f5bd7d8f3"

@@ -1,36 +1,17 @@
 import { IconImp } from '../icons/imp';
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { NavLink } from './nav-link/index';
 import { NavLinkItem } from './types';
 import { ThemeSwitch } from '../theme-switch';
 
-export const Header = () => {
+export const Header = (): ReactElement => {
   const [activeLink, setActiveLink] = useState('home');
 
   const links: NavLinkItem[] = [
     {
-      id: 'home',
-      name: 'Home',
-      href: '/',
-    },
-    {
       id: 'experience',
       name: 'Experience',
       href: '#experience',
-    },
-    {
-      id: 'projects',
-      name: 'Projects',
-      href: '#projects',
-    },
-    {
-      id: 'resume',
-      name: 'Resume',
-      href: '/',
-      params: {
-        target: '_blank',
-        rel: 'noreferrer',
-      },
     },
     {
       id: 'contact',
