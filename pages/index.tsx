@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { SectionGreet } from '../components/sections/bio';
+import { SectionGreet } from '../components/sections/greet';
 
 const Home: NextPage = () => {
   return (
